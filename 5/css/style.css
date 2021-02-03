@@ -1,0 +1,194 @@
+/* Variables */
+:root {
+    --basic-black: #000000;
+    --basic-dark: #231f20;
+    --basic-extra: #333333;
+    --basic-dark-gray: #666666;
+    --basic-extra-gray: #a9a9a9;
+    --basic-light-brown: #766357;
+    --basic-dark-brown: #766458;
+    --basic-extra-brown: #503E33;
+    --basic-light-blue: #81b3d3;
+    --basic-neutral-blue: #81b3d2;
+    --basic-white: #ffffff;
+    --basic-light: #eeeeee;
+    --basic-extra-light: #f2f2f2;  }
+
+  /* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/photo/sedona-hill.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+  .main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+  .site-navigation {
+    list-style: none;
+  }
+
+/* Features */
+
+  .features-list {
+    list-style: none;
+  }
+
+  .feature-item {
+    text-align: center;
+  }
+
+  .feature-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .review h3 {
+    font-size: 21px;
+    line-height: 21px;
+
+  }
+
+/* Index columns */
+
+.index-columns {
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+  background-image: url("../img/photo/sedona-flora.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.index-columns h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* Features */
+
+.features {
+  background-color: var(--basic-light);
+  color: var(--basic-extra);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features h3 {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* Bridge */
+
+.bridge {
+  background-image: url("../img/photo/sedona-bridge.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-neutral-blue);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--basic-neutral-blue);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-light-brown);
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Appointment */
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic-light-brown);
+}
+
+.appointment-item input:focus {
+  border-color: var(--basic-extra-brown);
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 21px;
+
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-white);
+}
