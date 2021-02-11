@@ -1,0 +1,633 @@
+  /* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-dark: #231f20;
+  --basic-extra: #333333;
+  --basic-dark-gray: #666666;
+  --basic-extra-gray: #a9a9a9;
+  --basic-light-brown: #766357;
+  --basic-dark-brown: #766458;
+  --basic-brown:  #604e43;
+  --basic-extra-brown: #503E33;
+  --basic-light-blue: #81b3d3;
+  --basic-neutral-blue: #81b3d2;
+  --basic-dark-blue: #5496db;
+  --basic-blue: #669ec0;
+  --basic-white: #ffffff;
+  --basic-light: #eeeeee;
+  --basic-extra-light:#f2f2f2;
+  --basic-dark-light:#ebebeb;
+  --basic-light-light: #E5E5E5;
+}
+
+  /* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Main header */
+
+.inner-page .main-header {
+  background-color: var(--basic-white);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+  /* Site-navigation */
+.site-navigation a {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-light-blue);
+}
+.site-navigation a:focus {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+  /* Presentation */
+
+.presentation {
+  width: 1200px;
+  height: 509px;
+  background-image: url("../img/photo/sedona-hill.jpg");
+}
+
+  /* Decor */
+
+.decor {
+  width: 1200px;
+  height: 57px;
+}
+
+  /* City */
+
+.city {
+  width: 1200px;
+  height: 216px;
+
+  font-style: normal;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.city h2 {
+  width: 470px;
+  height: 80px;
+
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.city p {
+  width: 519px;
+  height: 26px;
+
+  color: var(--basic-extra);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+  /* Review */
+
+.review {
+  background-color: var(--basic-light-blue);
+  width: 400px;
+  height: 256px;
+  background-repeat: no-repeat;
+
+  color: var(--basic-white);
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.review p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+  /* Flora */
+
+.flora {
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/photo/sedona-flora.jpg");
+}
+
+  /* index-columns */
+
+.index-columns {
+  color: var(--basic-extra);
+  font-size: 14px;
+  line-height: 21px;
+
+  font-style: normal;
+  font-weight: normal;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+  /* Features */
+
+.features {
+  background-color: var(--basic-white);
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+}
+
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.features h3 {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+  /* Bridge */
+
+.bridge {
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/photo/sedona-bridge.jpg");
+}
+
+.bridge h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+  /* Sight */
+
+.sight {
+  background-color: var(--basic-light-blue);
+  width: 400px;
+  height: 256px;
+  background-repeat: no-repeat;
+
+  color: var(--basic-white);
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+  /* Columns */
+
+.columns {
+  background-color: var(--basic-light);
+  width: 1200px;
+  height: 326px; /*исправить на 256*/
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+}
+  /* Button-search */
+
+.button-search {
+  width: 568px;
+  height: 86px;
+  background-color: var(--basic-light-brown);
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-search:hover {
+  background-color: var(--basic-light-brown);
+}
+
+.button-search:focus {
+  background-color: var(--basic-brown);
+}
+
+.button-search:active {
+  background-color: var(--basic-extra-brown);
+}
+
+.button-search.disabled,
+.button-search:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-light-blue);
+}
+
+  /* Button-find */
+
+.button-find {
+  width: 568px;
+  height: 86px;
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-find:hover {
+  background-color: var(--basic-light-blue);
+}
+
+.button-find:focus {
+  background-color: var(--basic-blue);
+}
+
+.button-find:active {
+  background-color: var(--basic-dark-blue);
+}
+
+.button-find.disabled,
+.button-find:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-light-blue);
+}
+
+  /* Inner-page */
+
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  width: 1200px;
+  height: 217px;
+  background-position: 0 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+  /* Page-title */
+
+.page-title {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Filters */
+
+.filter {
+  background-image: url("../img/photo/sedona-background.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 100%;
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+  /* Legend */
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+legend ul {
+  list-style: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+  color: var(--basic-black);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.breadcrumbs h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.breadcrumbs p {
+  font-weight: bold;
+}
+
+.breadcrumbs-list {
+  color: var(--basic-neutral-blue);
+}
+
+.breadcrumbs-item {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--basic-dark);
+}
+
+  /* Choice */
+
+.choice {
+  font-weight: normal;
+  color:var(--basic-extra);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.choice ul {
+  list-style: none;
+}
+
+.choice h3 {
+  font-weight: bold;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.choice h3:hover {
+  color: var(--basic-light-blue);
+}
+.choice h3:focus {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.choice h3:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+  /* Rating */
+
+.rating {
+  color: var(--basic-black);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.rating:hover {
+  color: var(--basic-neutral-blue);
+  font-weight: normal;
+}
+
+.rating:focus {
+  color: var(--basic-neutral-blue);
+  font-weight: normal;
+}
+
+.rating:active {
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+  /* Details */
+
+.details {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-neutral-blue);
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.details:hover {
+  background-color: var(--basic-blue);
+}
+
+.details:focus {
+  background-color: var(--basic-blue);
+}
+
+.details:active {
+  background-color: var(--basic-dark-blue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+  /* Booking */
+
+.booking {
+  width: 142px;
+  height: 27px;
+  background-color: var(--basic-light-brown);
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.booking:hover {
+  background-color: var(--basic-brown);
+}
+
+.booking:focus {
+  background-color: var(--basic-brown);
+}
+
+.booking:active {
+  background-color: var(--basic-extra-brown);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+  /* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+  /* Appointment */
+
+.appointment {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.appointment-info {
+  font-weight: normal;
+}
+
+.appointment h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+  /* Appointment-item */
+
+.appointment-item input {
+  font: inherit;
+  background-color: var(--basic-extra-light);
+  border: 2px solid var(--basic-light-light);
+}
+
+.appointment-item input:focus {
+  background-color: var(--basic-extra-light);
+  border: 2px solid var(--basic-light-light);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+  /* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+  /* Footer-contacts */
+
+.footer-contacts {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-contacts a {
+  font-weight: bold;
+  list-style: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 21px;
+}
+
+  /* Social button */
+
+.social-button {
+  background-color: var(--basic-light-blue);
+  color: inherit;
+  background: #81B3D2;
+  width: 12px;
+  height: 22px;
+}
+.social-button:hover{
+  background-color: var(--basic-neutral-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-dark-blue);
+}
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+  /* Website */
+
+.website {
+list-style: none;
+font-weight: normal;
+font-size: 14px;
+line-height: 26px;
+}

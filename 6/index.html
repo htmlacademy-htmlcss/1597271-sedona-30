@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1597271-sedona-30/6/">
+</head>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="main-header-logo">
+          <img src="img/logo/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="blank.html">Гостиницы</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main class="container">
+      <section class="presentation">
+        <img src="img/png/png-welcome.png" width="457" height="351" alt="Добро пожаловать">
+      </section>
+      <section class="decor">
+        <img src="img/icon/icon-decor.svg" width="1200" height="57" alt="Декор">
+      </section>
+      <section class="city">
+        <h2>Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+      <!--Исправить отступы-->
+    <div class="index-columns">
+      <section class="review">
+        <h3>Настоящий городок</h3>
+        <p>№1</p>
+        <p>Седона-не аттрацион для туристов, там течет своя жизнь</p>
+      </section>
+      <section class="flora">
+        <!--img src="img/photo/sedona-flora.jpg" width="800" height="256" alt="Окружение"-->
+      </section>
+    </div>
+    <div class="index-columns">
+      <section class="features">
+        <ul class="features-list">
+          <li class="feature-item">
+            <img src="img/icon/icon-house.svg" width="75" height="72" alt="Дом">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="feature-item">
+            <img src="img/icon/icon-burger.svg" width="75" height="70" alt="Бургер">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          </li>
+          <li class="feature-item">
+            <img src="img/icon/icon-gift.svg" width="64" height="77" alt="Подарок">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="index-columns">
+      <section class="bridge">
+        <!--img src="img/photo/sedona-bridge.jpg" width="800" height="256" alt="Мост Дьявола"-->
+      </section>
+      <section class="sight">
+        <h3>Там есть мост дьявола</h3>
+        <p>№2</p>
+        <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+      </section>
+    </div>
+    <div class="index-columns">
+      <section class="columns">
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3>Небольшая площадь</h3>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="feature-item">
+            <h3>Красивая дорога</h3>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="feature-item">
+            <h3>Мало  туристов</h3>
+            <p>№5</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+      <section class="appointment">
+        <h2>Заинтересовались?</h2>
+        <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label for="appointment-date-in">Дата заезда</label>
+            <input id="appointment-date-in" type="text" name="date" placeholder="27.04.2017">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-date-from">Время</label>
+            <input id="appointment-date-from" type="text" name="date" placeholder="04.07.2017">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-adults">Взрослые</label>
+            <input id="appointment-adults" type="text" name="adults" placeholder="2">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-children">Дети</label>
+            <input id="appointment-children" type="text" name="children" placeholder="0">
+          </p>
+          <button class="button-find" type="button">Найти</button>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <p>#Vizitsedona<br>Тел: <a  class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+        </p>
+      </section>
+      <section class="footer-social">
+        <!--<h3>Ссылки на соцсети</h3>/*Скрытый заголовок-->
+        <ul>
+          <li>
+            <a class="social-button" href="https://twitter.com/htmlacademy_ru">
+              <img src="img/icon/icon-twitter.svg" width="17" height="17" alt="Twitter">
+              <!--Twitter-->
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="https://www.facebook.com/htmlacademy">
+              <img src="img/icon/icon-facebook.svg" width="12" height="22" alt="Facebook">
+              <!--Facebook-->
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="img/icon/icon-youtube.svg" width="12" height="22" alt="YouTube">
+              <!--YouTube-->
+            </a>
+           </li>
+        </ul>
+      </section>
+      <section>
+        <!--<h3>Правобладатель</h3>/*Скрытый заголовок-->
+        <p class="website">
+          Website by:
+          <a class="button-website" href="https://htmlacademy.ru">
+          <img src="img/logo/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          <!--HTML Academy--></a>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
