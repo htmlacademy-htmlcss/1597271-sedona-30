@@ -46,7 +46,14 @@ img {
   height: auto;
 }
 
-  /* Main navigation */
+
+/* Main header */
+
+.inner-page .main-header {
+  background-color: var(--basic-white);
+}
+
+/* Main navigation */
 
 .main-navigation {
   font-size: 14px;
@@ -63,18 +70,14 @@ img {
   line-height: 26px;
 }
 
-.site-navigation a:hover{
+.site-navigation a:hover {
   color: var(--basic-light-blue);
 }
-.site-navigation a:focus{
-  background-color: var(--basic-black);
+.site-navigation a:focus {
+  color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
-/*
-.site-navigation a:not([href]) {
-  color: var(--basic-black);
-}*/
 
   /* Presentation */
 
@@ -86,14 +89,14 @@ img {
 
   /* Decor */
 
-.decor{
+.decor {
   width: 1200px;
   height: 57px;
 }
 
   /* City */
 
-.city{
+.city {
   width: 1200px;
   height: 216px;
 
@@ -175,7 +178,7 @@ img {
 
   /* Features */
 
-.features{
+.features {
   background-color: var(--basic-white);
   background-position: center, 0 0;
   background-repeat: no-repeat;
@@ -228,7 +231,7 @@ img {
 
   /* Columns */
 
-.columns{
+.columns {
   background-color: var(--basic-light);
   width: 1200px;
   height: 326px; /*исправить на 256*/
@@ -305,6 +308,216 @@ img {
   background-color: var(--basic-light-blue);
 }
 
+  /* Inner-page */
+
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  width: 1200px;
+  height: 217px;
+  background-position: 0 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+  /* Page-title */
+
+.page-title {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Filters */
+
+.filter {
+  background-image: url("../img/photo/sedona-background.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 100%;
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+  /* Legend */
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+legend ul {
+  list-style: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+  color: var(--basic-black);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.breadcrumbs h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.breadcrumbs p {
+  font-weight: bold;
+}
+
+.breadcrumbs-list {
+  color: var(--basic-neutral-blue);
+}
+
+.breadcrumbs-item {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--basic-dark);
+}
+
+  /* Choice */
+
+.choice {
+  font-weight: normal;
+  color:var(--basic-extra);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.choice ul {
+  list-style: none;
+}
+
+.choice h3 {
+  font-weight: bold;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.choice h3:hover {
+  color: var(--basic-light-blue);
+}
+.choice h3:focus {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.choice h3:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+  /* Rating */
+
+.rating {
+  color: var(--basic-black);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.rating:hover {
+  color: var(--basic-neutral-blue);
+  font-weight: normal;
+}
+
+.rating:focus {
+  color: var(--basic-neutral-blue);
+  font-weight: normal;
+}
+
+.rating:active {
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+  /* Details */
+
+.details {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-neutral-blue);
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.details:hover {
+  background-color: var(--basic-blue);
+}
+
+.details:focus {
+  background-color: var(--basic-blue);
+}
+
+.details:active {
+  background-color: var(--basic-dark-blue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+  /* Booking */
+
+.booking {
+  width: 142px;
+  height: 27px;
+  background-color: var(--basic-light-brown);
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.booking:hover {
+  background-color: var(--basic-brown);
+}
+
+.booking:focus {
+  background-color: var(--basic-brown);
+}
+
+.booking:active {
+  background-color: var(--basic-extra-brown);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
   /* Contacts */
 
 .contacts-phone {
@@ -312,7 +525,7 @@ img {
 }
   /* Appointment */
 
-.appointment{
+.appointment {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -326,7 +539,7 @@ img {
   font-weight: normal;
 }
 
-.appointment h2{
+.appointment h2 {
   font-size: 30px;
   line-height: 24px;
 }
@@ -359,7 +572,15 @@ img {
 
   /* Footer-contacts */
 
+.footer-contacts {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
 .footer-contacts a {
+  font-weight: bold;
   list-style: none;
 }
 
@@ -404,7 +625,7 @@ img {
 
   /* Website */
 
-.website{
+.website {
 list-style: none;
 font-weight: normal;
 font-size: 14px;
