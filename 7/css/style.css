@@ -131,30 +131,26 @@ img {
   width: 1200px;
   height: 509px;
   background-image: url("../img/photo/sedona-hill.jpg");
-}
-
-/* Decor */
-
-.decor {
-  width: 1200px;
-  height: 57px;
+  /*background-image: url("../img/icon/icon-decor.svg");*/
 }
 
 /* City */
 
 .city {
-  width: 1200px;
-  height: 216px;
+  /*width: 1200px;
+  height: 216px;*/
   font-style: normal;
   text-decoration: none;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
+  display: grid;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .city h2 {
-  width: 470px;
-  height: 80px;
+  /*width: 470px;
+  height: 80px;*/
 
   color: var(--basic-black);
   font-weight: bold;
@@ -163,13 +159,14 @@ img {
 }
 
 .city p {
-  width: 519px;
-  height: 26px;
+  /*width: 519px;
+  height: 26px;*/
 
   color: var(--basic-extra);
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  margin-bottom: 40px;
 }
 
 /* Index-columns-revier */
@@ -177,22 +174,23 @@ img {
 .index-columns-revier {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /* Review */
 
 .review {
   background-color: var(--basic-light-blue);
-  width: 400px;
-  height: 256px;
+  /*width: 400px;
+  height: 256px;*/
   background-repeat: no-repeat;
 
   color: var(--basic-white);
-  font-style: normal;
-  align-items: center;
+  /*font-style: normal;*/
+  /*align-items: center;*/
   text-align: center;
   text-transform: uppercase;
+  padding-top: 40px;
 }
 
 .review h3 {
@@ -233,7 +231,8 @@ img {
 /* Features */
 
 .features {
-  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .features {
@@ -291,8 +290,8 @@ img {
 
 .sight {
   background-color: var(--basic-light-blue);
-  width: 400px;
-  height: 256px;
+  /*width: 400px;
+  height: 256px;*/
   background-repeat: no-repeat;
   font-size: 14px;
   line-height: 21px;
@@ -300,9 +299,10 @@ img {
 
   color: var(--basic-white);
   font-style: normal;
-  align-items: center;
+  /*align-items: center;*/
   text-align: center;
   text-transform: uppercase;
+  padding-top: 40px;
 }
 
 
@@ -316,10 +316,12 @@ img {
 
 .columns {
   background-color: var(--basic-light);
-  width: 1200px;
-  height: 256px;
+  /*width: 1200px;
+  height: 256px;*/
   background-position: center, 0 0;
   background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .columns h3 {
@@ -331,7 +333,8 @@ img {
 /* Appointment */
 
 .appointment {
-  margin-bottom: 35px;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* Button-search */
