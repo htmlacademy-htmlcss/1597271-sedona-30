@@ -589,29 +589,48 @@ legend ul {
 
 .offering-hotel {
   display: grid;
-  grid-template-columns: 170px 300px 1fr;
-  align-content:stretch;
+  grid-template-columns: 135px 110px 142px auto 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 1200px;
+
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.offering-hotel a {
+  grid-column: 2 / -1;
+  height: 45px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Photo-hotel */
 
 .photo-hotel {
+  grid-row: 1 / -1;
   width: 135px;
   height: 90px;
-  align-content:stretch;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Offering */
 
 .offering {
-  grid-row: 2 / 2;
-  margin-left: 180px;
-  padding-bottom: 20px;
-  align-content:stretch;
-  margin-bottom: 40px;
-
+  grid-column: 2 /2;
+  height: 45px;
+  margin: 0px;
+  padding: 0px;
 }
 
+/* Price */
+
+.price {
+  height: 45px;
+  grid-column: 2 / ;
+  margin: 0px;
+  padding: 0px;
+}
 
 /* Rating */
 
@@ -621,6 +640,8 @@ legend ul {
   line-height: 18px;
   list-style: none;
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
   grid-column: end;
 }
 
