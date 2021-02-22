@@ -482,8 +482,8 @@ img {
   background-image: url("../img/photo/sedona-background.png");
   /*background-position: 0 0;*/
   background-repeat: no-repeat;
-  /*width: 1200px;
-  height: 100%;*/
+  width: 1200px;
+  /*height: 100%;*/
   color: var(--basic-white);
   font-style: normal;
   font-weight: normal;
@@ -589,61 +589,70 @@ legend ul {
 
 .offering-hotel {
   display: grid;
-  grid-template-columns: 135px 110px 142px auto 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 135px auto 1fr;
+  grid-template-rows: 30px 30px 30px;
   max-width: 1200px;
-
-  padding-top: 20px;
-  gap: 10px;
+  padding-top: 40px;
+  gap: 10px 20px;
 }
 
 .offering-hotel a {
   grid-column: 2 / -1;
-  height: 45px;
-  margin: 0px;
-  padding: 0px;
-}
-
-/* Photo-hotel */
-
-.photo-hotel {
-  grid-row: 1 / -1;
-  width: 135px;
-  height: 90px;
-  margin: 0px;
-  padding: 0px;
+  margin-left: 20px;
 }
 
 /* Offering */
 
 .offering {
   grid-column: 2 /2;
-  height: 45px;
-  margin: 0px;
-  padding: 0px;
+  margin-left: 20px;
+
+}
+
+/* Photo-hotel */
+
+.photo-hotel {
+  grid-row: 1/4;
+  width: 135px;
+  height: 90px;
 }
 
 /* Price */
 
 .price {
-  height: 45px;
-  grid-column: 2 / ;
-  margin: 0px;
-  padding: 0px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/* Booking */
+
+.booking {
+  grid-column: 3/4;
+  grid-row: 3/3;
 }
 
 /* Rating */
 
-.rating {
+.rating-meaning {
   color: var(--basic-dark-gray);
   font-size: 12px;
   line-height: 18px;
   list-style: none;
   text-decoration: none;
-  margin: 0px;
-  padding: 0px;
+}
+
+.rating-img {
+  grid-column: 4;
+  grid-row: 1;
   grid-column: end;
 }
+
+.rating-meaning {
+  grid-column: 4;
+  grid-row: 3;
+  grid-column: end;
+}
+
 
 /*.rating a{
   text-decoration: none;
@@ -679,6 +688,12 @@ legend ul {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+
+  height: 27px;
+  grid-column: 2/3;
+  grid-row: 3/3;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .details:hover {
