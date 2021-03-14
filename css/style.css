@@ -541,6 +541,9 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  margin-bottom: 55px;
+
+
 }
 
 .button-search:hover {
@@ -565,8 +568,8 @@ img {
 /* Button-find */
 
 .button-find {
-  width: 568px;
-  height: 86px;
+  width: 458px;
+  height: 58px;
   background-color: var(--basic-light-blue);
   color: var(--basic-white);
   font-style: normal;
@@ -576,6 +579,10 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  display: block;
+  position:  relative;
+  margin-left: 55px;
+
 }
 
 .button-find:hover {
@@ -972,30 +979,24 @@ legend ul {
 
 .appointment {
   width: 568px;
-  /*background-color: white;*/
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-
-  /*align-items: center;*/
-  text-align: center;
   text-transform: uppercase;
-  /*display: flex;*/
-  /*position: absolute;*/
 }
 
 .appointment-form {
   width: 568px;
-  height: 100%;
   z-index: 1;
   background-color:white;
   display: flex;
   position: absolute;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-
 
 .appointment-info {
   margin: 0;
@@ -1010,41 +1011,69 @@ legend ul {
 
 
 .appointment-item {
-  width: 467px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  display: flex;
-  align-content: center;
+  /*width: 467px;*/
 
+  /*width: 100%;*/
+  display: grid;
+  grid-template-columns: 30% 1fr;
 }
 
 .appointment .button {
-  margin-top: 10px;
-  margin-right: 0;
+  /*margin-top: 10px;
+  margin-right: 0;*/
 }
 
 .appointment-item label {
-  display: block;
-  width: 121px;
-  /*margin-bottom: 9px;
-  margin-left: 15px;*/
-  color:var(--basic-black)
+  color:var(--basic-black);
+
 }
 
 .appointment-item input {
   width: 346px;
   height: 38px;
-  /*padding-top: 8px;
-  padding-right: 15px;
-  padding-bottom: 7px;
-  padding-left: 15px;*/
   font: inherit;
-
   background-color: transparent;
   background-color: var(--basic-extra-light);
   border: 2px solid var(--basic-extra-light);
+  position: relative;
+  background-image: url("../img/icon/icon-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
+.appointment-item-union {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+
+.union {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.union label {
+  margin-left: 40px;
+}
+
+.appointment-item-union input {
+  width: 114px;
+  height: 38px;
+  font: inherit;
+  background-color: transparent;
+  position: relative;
+  background-color: var(--basic-extra-light);
+  border: 2px solid var(--basic-extra-light);
+  background-image: url("../img/icon/icon-rectangle.svg");
+  background-position: left;
+  background-image: url("../img/icon/icon-union.svg");
+
+  background-position: right;
+  background-repeat: no-repeat, no-repeat;
+  display: grid;
+}
 
 .appointment-item input:focus {
   background-color: var(--basic-extra-light);
@@ -1054,6 +1083,7 @@ legend ul {
 .appointment-item input:focus {
   border-color: var(--special);
 }
+
 
 .map {
   width: 1199px;
